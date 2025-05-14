@@ -8,6 +8,7 @@ public class Reservation {
     private Client client;
     private LocalDate checkIn;
     private LocalDate checkOut;
+
     public Reservation(Host host, Room room, Client client, LocalDate checkIn, LocalDate checkOut){
         this.host = host;
         this.room = room;
@@ -47,4 +48,10 @@ public class Reservation {
     public void setCheckOut(LocalDate checkOut){
         this.checkOut = checkOut;
     }
+
+    @Override
+    public String toString() {
+        return "+----Info prenotazione----+\n" + host.toString() +"+-------Info camere-------+\n"+ room.toString() +"+-------Dati utente-------+\n" + client.toString() + "Check-In: " + checkIn.toString()+ "\n"+ "Check-Out: "+checkOut.toString()+"\n\n";
+    }
+
 }

@@ -25,5 +25,10 @@ public class Host {
         this.address = address;
     }
 
-    /* GESTIONE DELLE CAMERE */
+
+    @Override
+    public String toString() {
+        return "Albergo " + name + "\n" + address + "\n";
+    }
+
 }

@@ -26,5 +26,9 @@ public class Client {
         this.surname = surname;
     }
 
+    @Override
+    public String toString() {
+        return "Nome: " + name + "\n" + "Cognome: " + surname + "\n";
+    }
 
 }
