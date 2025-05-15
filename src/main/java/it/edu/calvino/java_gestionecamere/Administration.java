@@ -32,7 +32,6 @@ public class Administration {
             }
         }
         reservations.add(reserve);
-        System.out.println(reserve);
     }
 
     @Override
